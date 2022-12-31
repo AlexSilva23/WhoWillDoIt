@@ -1,0 +1,7 @@
+#arrow {
+    display: block;
+    position: relative;
+    left: calc(47%);
+    text-align: center;
+    width: 6%;
+}
