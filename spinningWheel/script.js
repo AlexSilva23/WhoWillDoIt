@@ -12,12 +12,13 @@ loadCanvas();
 // Create the chart
 ctx = document.getElementById('myChartCanvas').getContext('2d');
 chart = new Chart(ctx, {
-    type: 'doughnut',
+    type: 'pie',
     data: {
         labels: namesListArray,
         datasets: [{
             data: valuesListArray,
             backgroundColor: colorListArray,
+            borderColor: 'rgba(0,0,0,.7)',
             borderWidth: 1,
             hoverOffset: 3
         }]
@@ -31,6 +32,17 @@ chart = new Chart(ctx, {
         },
         plugins: {
             datalabels: {
+                backgroundColor: 'rgba(0, 0, 0, .4)',
+                labels: {
+                    value: {
+                          
+                        font:{
+                            size: 25,
+                            weight: 'bold',
+                        },
+                        color: 'white',
+                    }
+                },   
                 formatter: function (value, context) {
                     return context.chart.data.labels[context.dataIndex];
                 }
@@ -56,6 +68,8 @@ function addNameInput() {
     if (nameInput.value.length > 0) {
         if (namesListArray.length < 10) {
             addNameToGraph();
+
+            document.getElementById("arrow").style.display = "block";
 
             nameInput.value = '';
         } else {
