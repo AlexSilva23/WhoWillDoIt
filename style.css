@@ -46,10 +46,6 @@ button[type="button"]:hover {
     background-color: #46a049;
 }
 
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-}
 
 nav ul {
     display: flex;
@@ -86,20 +82,6 @@ nav a:hover {
     opacity: 1;
     transform: translateY(0);
 }
-
-.text-container {
-    text-align: center;
-}
-
-#about {
-    background-color: red;
-}
-
-#gameModes {
-    background-color: blue;
-}
-
-
 
 #slideshow {
     width: 100%;
