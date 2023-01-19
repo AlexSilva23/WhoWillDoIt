@@ -83,7 +83,7 @@ function addNameInput() {
 
 function random_rgba() {
     var o = Math.round, r = Math.random, s = 255;
-    return 'rgba(' + o(r() * s) + ',' + o(r() * s) + ',' + o(r() * s) + ',' + r().toFixed(1) + ')';
+    return 'rgba(' + o(r() * s) + ',' + o(r() * s) + ',' + o(r() * s) + ',' + 255 + ')';
 }
 
 function selectRandomName() {
@@ -136,19 +136,18 @@ function addColor() {
     colorListArray.push(random_rgba());
 }
 
-// Define the function that will be called when the pie chart finishes spinning
 function selectWinner() {
     let randomNumber = Math.random() * 360;
+    let spinButton = document.getElementById("spinButton");
 
     chart.options.rotation = (-0.5 * Math.PI) - ((360 / chart.data.labels.length) * randomNumber / 180 * Math.PI);
     //rodar consoante as partes da roda, ex: se a roda tiver duas fatias, 180 uma 180 outra, se rodar de  180 em 180, a cada volta de 180 que da, muda o index, 
     //mesmo quando tem fatias maiores 4 fatias, 90graus, 1 roda (para a esquerda) index passa de 0 para 1, roda 90 passa de 1 para 2, quando chega ao index maximo, volta a 0
 
 
-    // Get the current rotation angle of the pie chart
     var angle = chart.options.rotation;
-    // Calculate the index of the data point that is closest to the right
-    var index = 0; //Math.round((angle % 360) / (360 / chart.data.labels.length));
+    
+    var index = 0;
 
     while (Math.floor(randomNumber) > 0) {
         if (index + 1 > chart.data.labels.length-1) {
@@ -160,8 +159,14 @@ function selectWinner() {
         randomNumber--;
     }
 
-    // Highlight the data point to indicate that it is the winner
     chart.data.datasets[0].backgroundColor[index] = '#ffff00';
+    console.log(chart.data.labels[index]);
+    setTimeout(() => {  document.getElementById("WinnerText").style.display = "inline-block"; }, 1000);
+    
+
+    document.getElementById("WinnerText").innerHTML = chart.data.labels[index] + ", parabens foste o vencedor!"; 
+    spinButton.disabled = true;
+
     chart.update();
 }
 

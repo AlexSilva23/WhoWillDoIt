@@ -1,16 +1,20 @@
-<p>Enter the names you want to insert on the wheel</p>
+<div class="SpinningWheelElements">
+    <p>Enter the names you want to insert on the wheel</p>
 
-<input id="name" type="text">
+    <input id="name" type="text">
 
-<span id="message"></span>
+    <span id="message"></span>
 
-<button type="button" onclick="addNameInput()">Add Name</button>
+    <button type="button" onclick="addNameInput()">Add Name</button>
 
-<br>
+    <br>
 
-<button id="spinButton" type="button" onclick="selectWinner()" disabled></button>
-
-<br>
+    <button id="spinButton" type="button" onclick="selectWinner()" disabled></button>
+    <br>
+</div>
 
 <img id="arrow" src="/spinningWheel/images/arrow.png" alt="arrow">
-<canvas id="myChartCanvas"></canvas>
+
+<div id="Chart">
+    <canvas id="myChartCanvas"></canvas>
+</div>
