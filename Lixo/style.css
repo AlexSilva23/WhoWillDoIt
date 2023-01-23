@@ -1,5 +1,4 @@
 body {
-    font-family: Arial, sans-serif;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
@@ -40,7 +39,7 @@ button[type="button"]:hover {
 }
 
 html { 
-    background: url(/Lixo/Images/BG.png) no-repeat center center fixed; 
+    background: url(../Lixo/Images/BG.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
