@@ -40,7 +40,7 @@ button[type="button"]:hover {
 }
 
 html { 
-    background: url(/dogPoop/Images/Background.png) no-repeat center center fixed; 
+    background: url(dogPoop/Images/Background.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

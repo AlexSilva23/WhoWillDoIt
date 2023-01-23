@@ -9,7 +9,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background:url(/HomePageImages/navbar_BG.png);
+    background:url(HomePageImages/navbar_BG.png);
     color: white;
     padding: 20px;
     position: fixed;
@@ -85,13 +85,13 @@ nav a:hover {
 
 
 #gameModes {
-    background: url(/images/Background_Gamemodes.png);
+    background: url(images/Background_Gamemodes.png);
 
 }
 
 #about {
     background-color: red;
-    background: url(/images/Background_About.png);
+    background: url(images/Background_About.png);
 
 }
 
