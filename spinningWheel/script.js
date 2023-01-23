@@ -199,6 +199,6 @@ function loadCanvas() {
             }
         }
     }
-    xhttp.open("GET", '/spinningWheel/index.html', false);
+    xhttp.open("GET", '../spinningWheel/index.html', false);
     xhttp.send();
 }
