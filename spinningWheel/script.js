@@ -195,10 +195,10 @@ function loadCanvas() {
             }
             
             if (this.status == 404) {
-                myChart.innerHTML = "Page not found.";
+                myChart.innerHTML = "Page not found!";
             }
         }
     }
-    xhttp.open("GET", './spinningWheel/index.html', false);
+    xhttp.open("GET", '../spinningWheel/index.html', false);
     xhttp.send();
 }
