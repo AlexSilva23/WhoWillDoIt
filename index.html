@@ -5,14 +5,16 @@
     <meta charset="utf-8">
     <title>Who will do it?</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="icon" href="/HomePageImages/logo.png" type="image/icon type">
 </head>
 
 <body>
     <nav class="visible">
-        <div class="logo"> <img src="/HomePageImages/logo.png" alt=""></div>
+        <div class="logo"> <a href="#home" class="top-link"><img src="/HomePageImages/logo.png" alt="Logo"></a></div>
         <ul>
-            <li><a href="">Game Modes</a></li>
-            <li><a href="">About ()</a></li>
+            <li><a href="#gameModes" class="scroll-link">Game Modes</a></li>
+            <li><a href="#about" class="scroll-link">About</a></li>
         </ul>
     </nav>
     <div id="" class="section visible">
@@ -26,12 +28,27 @@
         </div>
     </div>
 
-    <div class="GameModes">
-        <p>game modes</p>
+
+    <div id="gameModes" class="section">
+        <div>
+            <a href="/Lixo/index.html" target="_blank">
+                <img class="gamemodeButton" src="/HomePageImages/GarbageButton.png" alt="Garbage">
+            </a>
+            <a href="/dogPoop/index.html" target="_blank">
+                <img class="gamemodeButton" src="/HomePageImages/DogPoopButton.png" alt="poop">
+            </a>
+        </div>
     </div>
 
-    <div class="About">
-        <p>About</p>
+    <div id="about" class="section">
+        <div class="text-container">
+            <h1>About "Who will do it?"</h1>
+            <p>Welcome to Who Will Do It, the ultimate tool for making quick and easy decisions. Our spinning wheel is
+                designed to help you determine who will be responsible for completing a task. Simply input
+                the names of those involved, spin the wheel, and let fate decide who will take on the job. Say goodbye
+                to endless debates and disagreements, and let Who Will Do It take the stress out of decision making. Try
+                it now and see how easy it is to get things done!</p>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

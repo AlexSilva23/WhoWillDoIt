@@ -163,8 +163,8 @@ function selectWinner() {
     console.log(chart.data.labels[index]);
     setTimeout(() => {  document.getElementById("WinnerText").style.display = "inline-block"; }, 1000);
     
-
-    document.getElementById("WinnerText").innerHTML = chart.data.labels[index] + ", parabens foste o vencedor!"; 
+    let winnerText = document.getElementById("WinnerText").innerHTML;
+    document.getElementById("WinnerText").innerHTML ="Congratulations " +  chart.data.labels[index] + "! " + winnerText; 
     spinButton.disabled = true;
 
     chart.update();

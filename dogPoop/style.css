@@ -27,10 +27,12 @@ button[type="button"]:hover {
 
 #WinnerText{
     font-size: 20px;
-    transition: 5s ease-in;
     padding-left: 5%;
     padding-top: 10%;
     display: none;
+    width: 50%;
+    text-align: center;
+    line-height: 1.6;
 }
 
 #WinnerText::first-letter{
@@ -65,6 +67,15 @@ html {
     button[type="button"]:hover {
         background-color: #46a049;
     }    
+
+    #WinnerText{
+        font-size: 20px;
+        padding-left: 5%;
+        padding-top: 10%;
+        display: none;    
+        width: 25%;
+        text-align: left;
+    }
 
 }
 
